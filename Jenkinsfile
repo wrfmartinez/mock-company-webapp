@@ -9,13 +9,11 @@ pipeline {
        stages {
            stage('Build') {
                steps {
-                   // TODO: Build
                    sh './gradlew assemble'
                }
            }
            stage('Test') {
                steps {
-                   // TODO: Test
                    sh './gradlew test'
                }
            }
